@@ -1,0 +1,44 @@
+---
+title: 'Course Project: Shiny Application and Reproducible Pitch'
+author: "Nupur Sinha"
+date: "7/17/2020"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Auto Analysis Report
+
+ISLR Dataset Auto Data Analysis Report
+
+## Application Overview
+
+- Cars can be analysed using several parameters.
+- Some of the common parameters are gas mileage, engine horsepower, cylinders, displacement, weight, acceleration.
+- This report enables to predict the mpg for a car based on number of cylinders, horsepower and acceleration inputted by the user.
+
+## Slide with Complete Reporting Appliaction
+
+Click the Below Link for the Application.
+
+https://ns92.shinyapps.io/Auto_Course9/
+
+Click the link below for compiled project files on gitub repo.
+
+https://github.com/nsinha08/Course9
+
+## Data Used
+
+The data used for this application is ISLR Auto data set. It has information about gas mileage, engine horsepower, cylinders, displacement, weight, acceleration, model year, car origin, vehicle name for 392 vehicles.
+
+```{r, echo=TRUE}
+library(ISLR)
+data(Auto)
+
+summary(Auto)
+str(Auto)
+```
